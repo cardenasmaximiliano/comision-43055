@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="etiquetas.html">IR A ETIQUETAS</a>
+    <a href="../index.html">ir al index</a>
+
+    <form action="">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <!--<label for=""></label>va a ser la etiqueta que va a recoger la informacion-->
+           <!-- <input type="text"> va a ser la etiqueta que va a declarar el tipo de informacion-->
+            
+            <label for="nombre">
+                <span>Nombre:</span>
+                <input type="text" id="nombre" required>
+            </label>
+            <label for="pass">
+                <span>contraseña:</span>
+                <input type="password" id="pass" required>
+            <label for="email">
+                <span>correo electronico:</span>
+                <input type="email" id="email" required>
+            </label>
+            <!--radio -->
+            <label for="chico">chico</label>
+            <input type="radio" name="edad" id="chico" value="chico">
+            <label for="mediano">mediano</label>
+            <input type="radio" name="edad" id="mediano" value="mediano">
+            <label for="grande">grande</label>
+            <input type="radio" name="edad" id="grande" value="grande">
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+</html>
