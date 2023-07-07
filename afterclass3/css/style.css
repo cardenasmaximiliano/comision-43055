@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Roboto:wght@100;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+tipografias
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+/*
+MANERAS DE ESCRIBIR CLASES y ID
+
+camelCase: tituloPrincipal 
+kebab: titulo-principal
+snake_case: titulo_principal
+
+LAS CLASES SE PUEDEN REPETIR LAS VECES QUE SEA NECESARIO
+
+LOS ID solamente se pueden utilizar una vez, y la reservamos para JavaScript
+
+h1{
+    color: green;
+}
+
+.tituloFormulario{
+    color: red;
+}
+.tituloFormulario{
+    color: violet;
+}   
+.tituloFormulario{
+    color: burlywood;
+}
+
+p{
+    color: green;
+}
+p{
+    color: blue;
+}
+*/
+header{
+    background-color: #de829e;
+}
+
+header h1{
+    text-align: center;
+    text-decoration:line-through ;
+    letter-spacing: 7px;
+}
+
+.navbar{
+    list-style: none;
+}
+
+.navbar li a{
+    text-decoration:none;
+    color: white;
+}
+
+.sectionPrincipal{
+    background-color: yellow;
+    text-align: center;
+}
+.sectionPrincipal h2{
+    word-spacing: 10px;
+}
+
+
+
+
+.sectionSecundario{
+    background-color: lightcoral;
+}
+.sectionSecundario p{
+    text-indent: 12px;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+input{
+    background-color: lightblue;
+}
