@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**
+html{
+    font-size: 62.5%;
+ 1rem = 16px / 62.5% = 1rem = 10px
+
+}*/
+
+@font-face {
+    font-family: scrapy ;
+    src: url(../assets/tipografias/ScrapyardScript_PERSONAL_USE_ONLY.otf);
+}
+
+
+header{
+    background-image: url("../assets/img/mailchimp-4ct0iDMOjuc-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    background-color: rgb(155, 202, 243);
+    /*ancho width:  largo o alto height*/
+    width: 100%;
+    height: 31.25rem;
+    font-size: 30px;
+
+}
+
+header{
+    font-size: 1em;
+    font-family: scrapy;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+nav{
+  
+}
+
+/**
+Medidas
+
+ABSOLUTAS = MEDIDA QUE NO CAMBIA DEPENDIENDO EL TAMAÑO DE PANTALL
+
+PX = es una medida absoluta que no se va a alterar
+
+RELATIVAS = se va a ir adaptando a los diferentes tamaños de pantalla
+
+% = es una medida relativa. PARA CONTENEDORES
+
+rem= PARA TAMAÑO DE FUENTES Y REEMPLAZANDO MEDIDAS DE PX
+
+em= va a tomar de base al contenedor donde se aplica.
+
+**/
+
+.caja{
+    width: 12.5rem;
+    height: 15.625rem;
+    background-color: rgb(147, 240, 128);
+    border-style: dashed;
+    border-color: rgb(0, 0, 0);
+    border-width: 2px;
+    margin: 10px;
+    margin-top: 20px;
+    /* border-radius: 10px 20px 50% 1rem; */
+    border-radius: 10px;
+    box-shadow: -15px -15px 10px grey;
+}
+
+/* .caja p{
+    /* padding: 20px; */
+    /* padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    padding-left: 4px; */
+    /* padding: 0px 5px 20px 10px; */
+    /* padding: 10px 20px;  primero Y despues X */
+    /* border: 2px solid black;}  */
+
+.cambio1{
+    background-color:orange;
+    position: relative;
+    /* bottom: 100px;
+    left: 100px ; */
+    z-index: -1;
+}
+.cambio1 p{
+ position: absolute;
+ top: 0;
+ 
+}
+
+.cambio2{
+    background-color:lightblue;
+}   
+
+/* fixed y sticky**/
+header img{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

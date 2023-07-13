@@ -1,0 +1,43 @@
+/* ul li{
+    display: inline;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    /*propiedades base*/
+    flex-direction: row;
+    /**poner los elementos en inline=row block=column**/
+    justify-content: space-between;
+
+    background-color: rgba(173, 216, 230, 0.507);
+}
+.navbar{
+    display: flex;
+    list-style: none;
+
+}
+main{
+    background-color: rgba(211, 211, 211, 0.483);
+}
+
+.cards-container{
+    display: flex;
+    /*propiedades base*/
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;/*primer atributo direction / wrap**/
+    justify-content:space-evenly;/*propiedad en row que mueve los elementos de izquierda a derecha*/
+}
+.card{
+    width: 20rem;
+    height: 23.125rem;
+    border: 1px solid grey;
+    background-color: rgba(240, 128, 128, 0.612);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.445);
+    border-radius: .625rem;
+}
