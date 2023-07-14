@@ -13,25 +13,32 @@ header{
     flex-direction: row;
     /**poner los elementos en inline=row block=column**/
     justify-content: space-between;
-
+    align-items: flex-end;
     background-color: rgba(173, 216, 230, 0.507);
 }
 .navbar{
     display: flex;
     list-style: none;
+    width: 300px;
+    gap: 1.25rem;
+    padding-right: 1.25rem;
 
-}
+} 
+
 main{
     background-color: rgba(211, 211, 211, 0.483);
 }
 
 .cards-container{
     display: flex;
+    width: 100%;
+    height: 31.25rem;
     /*propiedades base*/
     /* flex-direction: row;
     flex-wrap: wrap; */
     flex-flow: row wrap;/*primer atributo direction / wrap**/
     justify-content:space-evenly;/*propiedad en row que mueve los elementos de izquierda a derecha*/
+  align-items: center; 
 }
 .card{
     width: 20rem;
@@ -40,4 +47,64 @@ main{
     background-color: rgba(240, 128, 128, 0.612);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.445);
     border-radius: .625rem;
+}
+.c1 {
+    background-color: red;
+    align-self: flex-start ;
+    order:3 ;
+}
+.card-img{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .625rem .625rem 0 0 ;
+    filter: blur(10px);
+}
+.card-img img:hover{
+    filter: blur(0px);
+}
+.card-info{
+    color: black;
+    display: flex;
+    width: 100%;
+    height: 10.625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+.c2 {
+    background-color: rgb(66, 207, 101);
+    order: 2;
+}
+.c3 {
+    background-color: rgb(255, 247, 0);
+    align-self: flex-end;
+    order:1 ;
+    background-image: url("https://images.unsplash.com/photo-1682685796186-1bb4a5655653?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    filter: blur(10px);
+}
+.c3:hover{
+    filter: blur(0px);
+}
+.c3 h2{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.41);
+}
+.c4 {
+    background-color: rgb(195, 0, 255);
+    order:4 ;
 }
