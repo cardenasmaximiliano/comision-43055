@@ -12,9 +12,10 @@ header{
     /*propiedades base*/
     flex-direction: row;
     /**poner los elementos en inline=row block=column**/
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
     background-color: rgba(173, 216, 230, 0.507);
+    padding: 1.875rem;
 }
 .navbar{
     display: flex;
@@ -27,6 +28,7 @@ header{
 
 main{
     background-color: rgba(211, 211, 211, 0.483);
+    padding: 30px;
 }
 
 .cards-container{
