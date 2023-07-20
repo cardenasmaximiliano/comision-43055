@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(7, 7, 7);
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .25rem .9375rem;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 1.875rem;
+    padding-right: 2.5rem ;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #F25774;
+    font-size: 1.875rem;
+}
+
+.section-principal{
+    background-image: url("https://images.unsplash.com/photo-1682686578023-dc680e7a3aeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 75%;
+}
+
+.section-dos{
+    display: flex;
+    width: 100%;
+    padding-top: 3.75rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+}
+.section-dos-textos{
+    width: 25%;
+    
+}
+.section-dos-textos h2{
+    padding-bottom: 2.5rem;
+}
+
+/****grid****/
+
+.galeria{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,25%);
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: 
+    "div1 div2 div3"
+    "div1 div2 div3"
+    "div1 div4 div4"
+    ;
+    justify-content: center;
+    gap: .625rem;
+}
+.galeria div {
+    width: 100%;
+    height: 100%;
+}
+.galeria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.div1 {
+    grid-area: div1;
+}
+
+.div2 {
+    grid-area: div2;
+}
+.div3 {
+    grid-area: div3;
+}
+.div4 {
+    grid-area: div4;
+}
+
+
+
+
+
+@media(max-width:1024px){
+    header{
+        background-color: lightblue;
+    }
+    .section-principal{
+        background-image: url("https://images.unsplash.com/photo-1689832870997-18b825b4b676?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80");
+    }
+    .section-principal h1{
+        color: white;
+        font-size: 2.5rem;
+    }
+
+}
+@media (max-width:768px){
+        header{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            
+        }
+        .section-dos{
+            width: 100%;
+            height: 300px;
+            background-image: url("../assets/img/Rectangle.png");
+        }
+        .section-dos div img{
+            display: none;
+        }
+        .section-dos-textos{
+            width: 50%;
+            
+        }
+        .galeria{
+            grid-template-columns: repeat(2, 25%);
+            grid-template-rows: repeat(2, 300px);
+            grid-template-areas: 
+            "div1 div2"
+            "div3 div4"
+            
+            ;
+        }
+    }
+
+    @media (max-width:480px){
+        .navbar{
+            flex-direction: column;
+            padding-right: 0;
+        }
+        .section-dos-textos{
+            width: 100%;
+            
+        }
+        .section-dos-textos h2{
+            padding-bottom: .625rem;
+        }
+        .galeria{
+            grid-template-columns: 50%;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "div1"
+            "div2"
+            "div3"
+            "div4"
+            
+            ;
+        }
+    }
