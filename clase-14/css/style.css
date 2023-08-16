@@ -1,0 +1,114 @@
+.radial{
+    background: radial-gradient(yellow, red);
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+.lineal{
+    background-image: radial-gradient(circle at 39.34% 43.85%, #0089e3 0, #0086e8 8.33%, #0083ec 16.67%, #007eed 25%, #007aed 33.33%, #0074ea 41.67%, #486ee5 50%, #6c67de 58.33%, #8560d6 66.67%, #9a58cc 75%, #ac4fc0 83.33%, #ba47b4 91.67%, #c53fa6 100%); width: 12.5rem;
+    height: 12.5rem;
+    transform: skew(20deg);
+}
+
+
+.shadow{
+    width: 12.5rem;
+    height: 12.5rem;
+    background-color: rgba(47, 43, 43, 0.586);
+    border-radius: 50% ;
+}
+.shadow:hover{
+    box-shadow: 0px 0px 10px grey;
+}
+.circle{
+    width: 12.5rem;
+    height: 12.5rem;
+    background-color: blue;
+    border-radius: 50% ;
+    transform: translate(10px, 10px);
+}
+.circle:hover{
+    /* transform: translate(-20px, -40px); */
+    transform: scale(0.98);
+    background-color: lightcoral;
+    
+}
+
+.rectangulo{
+    width: 400px;
+    height: 100px;
+    background-color: rgb(149, 255, 0);
+}
+.rectangulo:hover{
+    transform: rotate(-30deg);
+}
+
+header{
+    background-image: linear-gradient(to right bottom, #a139b1, #933bbf, #7e3fce, #5e44dc, #124beb);
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    font-size: 1.25rem;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+  
+}
+nav ul li:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+
+.transformacion{
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    transition: width 2s, height 4s;
+}
+.transformacion:hover{
+    width: 200px;
+    height: 200px;}
+
+
+.cuadrados{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    animation-name: colores;
+    animation-iteration-count: 4;
+    animation-timing-function:cubic-bezier(.59,.88,.97,-0.34);
+    animation-duration: 5s;
+    animation-delay: 4s;
+}
+
+@keyframes colores{
+    0%{
+        background-color: yellow;
+    }
+    10%{
+        background-color: red;
+    }
+    25%{
+        background-color: blue;
+        border-radius: 50%;
+    }
+    50%{
+        background-color: green;
+
+    }
+    75%{
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+    }
+    100%{
+        background-color: yellow;
+    }
+}
+

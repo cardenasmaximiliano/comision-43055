@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0px 1.25rem;
+}
+
+.navbar{
+    display: flex;
+    gap: 1.25rem;
+    list-style: none;
+    
+}
+.navbar li a{
+    text-decoration: none;
+    color: lightskyblue;
+    font-size: 1.25rem;
+}
+
+.navbar li a:hover{
+    color: rgb(231, 64, 243);
+    font-size: 1.3125rem;
+}
+.navbar li a:visited{
+    color: purple;
+}
+.card{
+    width: 20rem;
+    height: 26.25rem;
+    border: 1px solid rgba(128, 128, 128, 0.402);
+    box-shadow: 2px 2px 40px rgba(128, 128, 128, 0.394);
+}
+
+.card button{
+    padding: 1.25rem;
+    border: none;
+    border-radius: .3125rem;
+}
+
+.card button:active{
+    background-color: lightblue;
+
+}
+
+input{
+    padding: 1.25rem;
+}
+ input:focus{
+    background-color: lightblue;
+ }
+
+ .hijo p:first-child{
+    font-size: 2.5rem;
+    color: red;
+ }
+
+.hijo p:nth-child(3){
+    font-size: 2.5rem;
+    color: yellow;
+    background-color: black;
+}
+
+.hijo p:hover:nth-child(3){
+    color: red;
+}
+ .hijo p:last-child{
+    color: blue;
+    font-size: 2.5rem;} 
+
+/**pseudoelementos*/
+
+.hijo p:hover:first-child::after{
+    content: "HOLA CHICOS MIREN ESTO";
+    color: blue;
+}
+
+
+.hijo p:hover:first-child::before{
+    content: "HOLA CHICOS MIREN ESTO";
+    color: blue;
+}
+
+.hijo p:nth-child(2)::first-letter{
+    font-size: 3.125rem;
+    text-decoration: underline;
+    color: red;
+}
+
+.hijo p:nth-child(4)::first-line{
+    color: blue;
+}
+
+.select::selection{
+    background-color: lightblue;
+}
+
